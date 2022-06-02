@@ -2,7 +2,7 @@
   "name": "svelte-reveal-boilerplate",
   "version": "1.0.0",
   "scripts": {
-    "build": "rollup -c",
+    "build": "rollup -c && mv public docs",
     "dev": "rollup -c -w",
     "start": "sirv public --no-clear --single",
     "format": "prettier --write '{public,src}/**/*.{css,html,js,svelte}'",
