@@ -1,13 +1,13 @@
 <script>
-    import { onMount } from 'svelte';
+  import { onMount } from "svelte";
 
-    onMount(() => console.log('md'));
+  onMount(() => console.log("md"));
 </script>
 
 <section>
-    <h2>Getting started</h2>
-    <ul>
-        <li class="fragment fade-up">Configure your Presentation in <code>config.js</code></li>
-        <li class="fragment fade-up">Create your Slides in <code>Presentation.svelte</code></li>
-    </ul>
+  <h2>Getting started</h2>
+  <ul>
+    <li class="fragment fade-up">Configure your Presentation in <code>config.js</code></li>
+    <li class="fragment fade-up">Create your Slides in <code>Presentation.svelte</code></li>
+  </ul>
 </section>

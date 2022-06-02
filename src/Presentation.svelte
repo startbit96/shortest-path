@@ -1,12 +1,11 @@
 <script>
-    import Title          from './slides/Title.svelte';
-    import Love           from './slides/Love.svelte';
-    import GettingStarted from './slides/GettingStarted.svelte';
+  import Title from "./slides/Title.svelte";
+  import Love from "./slides/Love.svelte";
+  import GettingStarted from "./slides/GettingStarted.svelte";
 
-    const partner = ['Svelte', 'Reveal.js'];
+  const partner = ["Svelte", "Reveal.js"];
 </script>
 
-<Title/>
-<Love {partner}/>
-<GettingStarted/>
-
+<Title />
+<Love {partner} />
+<GettingStarted />
