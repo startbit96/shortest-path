@@ -4,7 +4,7 @@
   "scripts": {
     "build": "rollup -c",
     "dev": "rollup -c -w",
-    "start": "sirv docs --no-clear --single",
+    "start": "sirv docs --no-clear --single --port 5555",
     "format": "prettier --write '{docs,public,src}/**/*.{css,html,js,svelte}'",
     "lint": "eslint --fix --quiet src --ext .js,.svelte"
   },
