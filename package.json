@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w",
+    "dev": "rollup -c -w --port 5555",
     "start": "sirv docs --no-clear --single --port 5555",
     "format": "prettier --write '{docs,public,src}/**/*.{css,html,js,svelte}'",
     "lint": "eslint --fix --quiet src --ext .js,.svelte"
@@ -11,9 +11,11 @@
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
     "@rollup/plugin-node-resolve": "^11.0.0",
+    "autoprefixer": "^10.4.7",
     "eslint": "^8.16.0",
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-svelte3": "^4.0.0",
+    "postcss": "^8.4.14",
     "prettier": "^2.6.2",
     "prettier-plugin-svelte": "^2.7.0",
     "reveal.js": "^4.1.0",
@@ -23,7 +25,8 @@
     "rollup-plugin-svelte": "^7.0.0",
     "rollup-plugin-terser": "^7.0.0",
     "svelte": "^3.0.0",
-    "svelte-preprocess": "^4.7.3"
+    "svelte-preprocess": "^4.7.3",
+    "tailwindcss": "^3.1.2"
   },
   "dependencies": {
     "sirv-cli": "^1.0.0"

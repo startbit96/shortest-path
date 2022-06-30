@@ -660,6 +660,7 @@ var app = (function () {
     	let t1;
     	let span;
     	let t3;
+    	let div;
 
     	const block = {
     		c: function create() {
@@ -669,10 +670,14 @@ var app = (function () {
     			t1 = text(" = ");
     			span = element("span");
     			span.textContent = "❤";
-    			t3 = text("\n  Lets have fun!");
-    			attr_dev(span, "class", "heart svelte-kwjg47");
+    			t3 = text("\n  Lets have fun!\n  ");
+    			div = element("div");
+    			div.textContent = "hallo";
+    			attr_dev(span, "class", "heart svelte-1rsknqb");
     			add_location(span, file$2, 5, 30, 82);
     			add_location(h2, file$2, 5, 2, 54);
+    			attr_dev(div, "class", "underline");
+    			add_location(div, file$2, 7, 2, 141);
     			add_location(section, file$2, 4, 0, 42);
     		},
     		l: function claim(nodes) {
@@ -685,6 +690,7 @@ var app = (function () {
     			append_dev(h2, t1);
     			append_dev(h2, span);
     			append_dev(section, t3);
+    			append_dev(section, div);
     		},
     		p: function update(ctx, [dirty]) {
     			if (dirty & /*partner*/ 1 && t0_value !== (t0_value = /*partner*/ ctx[0].join(" + ") + "")) set_data_dev(t0, t0_value);

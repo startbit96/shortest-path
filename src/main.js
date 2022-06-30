@@ -1,3 +1,4 @@
+import "./main.css";
 import App from "./App.svelte";
 import config from "./config";
 
